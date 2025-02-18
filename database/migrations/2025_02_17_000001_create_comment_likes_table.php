@@ -17,12 +17,12 @@ class CreateCommentLikesTable extends Migration
             $table->ipAddress('ip_address')->nullable();
             $table->timestamps();
 
-            $table->foreign('comment_id')->references('id')->on('comments')->onDelete('cascade');
+            $table->foreign('comment_id')->references('id')->on('owc_comments')->onDelete('cascade');
         });
     }
 
     public function down()
     {
-        Schema::dropIfExists('comment_likes');
+        Schema::dropIfExists('owc_comment_likes');
     }
 }
