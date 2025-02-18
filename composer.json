@@ -1,0 +1,30 @@
+{
+    "name": "maximeetundi/openwirecomment",
+    "description": "Package Laravel open source pour un système de commentaires avec Livewire",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Maxime ETUNDI",
+            "email": "maximeetundi@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "livewire/livewire": "^3.0",
+        "illuminate/support": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MaximeEtundi\\OpenWireComment\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MaximeEtundi\\OpenWireComment\\OpenWireCommentServiceProvider"
+            ]
+        }
+    }
+}
