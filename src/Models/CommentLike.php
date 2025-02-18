@@ -11,6 +11,8 @@ class CommentLike extends Model
         'ip_address'
     ];
 
+    protected $table = 'owc_comment_likes';
+
     public function comment()
     {
         return $this->belongsTo(Comment::class);

@@ -8,7 +8,7 @@ class CreateCommentsTable extends Migration
 {
     public function up()
     {
-        Schema::create('comments', function (Blueprint $table) {
+        Schema::create('owc_comments', function (Blueprint $table) {
             $table->id();
             // Relation polymorphique
             $table->morphs('commentable');

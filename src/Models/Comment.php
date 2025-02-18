@@ -15,7 +15,8 @@ class Comment extends Model
         'user_agent',
         'parent_id'
     ];
-
+    
+    protected $table = 'owc_comments';
     // Relation polymorphique avec le modèle associé
     public function commentable()
     {

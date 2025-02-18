@@ -9,7 +9,7 @@ class CreateCommentLikesTable extends Migration
 {
     public function up()
     {
-        Schema::create('comment_likes', function (Blueprint $table) {
+        Schema::create('owc_comment_likes', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('comment_id');
             // On enregistre soit l'id de l'utilisateur, soit l'IP pour les visiteurs non authentifiés
